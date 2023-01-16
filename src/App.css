@@ -1,0 +1,158 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  padding: 1rem;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: #E5EFC1;
+}
+
+form{
+  width: 400px;
+  height: 500px;
+  border: 1px solid grey;
+  padding: 1.5rem;
+  border-radius: 20px;
+  background-image: linear-gradient(to right, #FFBF00, #FF7000); 
+}
+
+.App{
+  display: flex;
+  gap: 1rem;
+}
+
+.input-wrapper{
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+  font-size: 20px;
+}
+
+.toggle-input{
+  font-size: 20px;
+}
+
+.input-wrapper input {
+  padding: 10px;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+
+.input-inline{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+  
+}
+
+button{
+  margin: 40px auto;
+  display: block;
+  width: 80px;
+  padding: 3px;
+  background: rgb(194, 191, 191);
+  border-radius: 5px; 
+  font-size: 15px; 
+}
+button:hover{
+  background-color: #56c080;
+}
+
+ul{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+}
+
+li{
+  list-style: none;
+  border: 1px solid grey;
+  margin: 1rem auto;
+  font-weight: normal;
+  padding: 1rem;
+  border-radius: 20px;
+  background-image: linear-gradient(to right, #FFD39A, #D07000);
+  line-height:2rem; 
+  max-width: 300px;
+  
+}
+li h4 {
+  font-weight: 400;
+  font-size: 20px;
+  color: darkblue;
+}
+
+
+h4 span {
+  font-weight: bold;
+  color: darkblue; 
+}
+
+.btn-delete, .btn-edit{
+  margin: 20px auto;
+  width: 100px;
+  align-items: center;
+}
+.bx-trash, .bx-edit{
+  margin-right: 10px;
+}
+
+.toggle {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.toggle-switch {
+  display: inline-block;
+  background: #ccc;
+  border-radius: 16px;
+  width: 58px;
+  height: 32px;
+  position: relative;
+  vertical-align: middle;
+  transition: background 0.25s;
+}
+.toggle-switch:before, .toggle-switch:after {
+  content: "";
+}
+.toggle-switch:before {
+  display: block;
+  background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  transition: left 0.25s;
+}
+.toggle:hover .toggle-switch:before {
+  background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+}
+.toggle-checkbox:checked + .toggle-switch {
+  background: #56c080;
+}
+.toggle-checkbox:checked + .toggle-switch:before {
+  left: 30px;
+}
+
+.toggle-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+
+.toggle-label {
+  margin-left: 5px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  position: relative;
+  top: 2px;
+}
